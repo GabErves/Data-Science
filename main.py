@@ -68,3 +68,31 @@ myArray2 = np.array([[11,12,13], [14,15,16]])
 reshaped_array = myArray2.reshape(3, 2)
 print(reshaped_array)
 
+print(f'Question 12')
+myArray3 = np.arange(10)
+squared_array = np.square(myArray3)
+print(squared_array)
+
+print(f'Question 13')
+sqrt_array = np.sqrt(myArray3)
+print(sqrt_array)
+
+print(f'Question 14')
+multiplied_array = squared_array * sqrt_array
+print(multiplied_array)
+
+print(f'Question 15')
+myArray4 = np.array([[11, 12, 13], [14, 15, 16], [17, 18, 19]])
+new_row = np.array([20, 21, 22])
+myArray_with_new_row = np.append(myArray4, [new_row], axis=0)
+print(myArray_with_new_row)
+
+print(f'Question 16')
+new_column = np.array([30, 40, 50])
+myArray_with_new_column = np.append(myArray4, new_column.reshape(-1, 1), axis=1)
+print(myArray_with_new_column)
+
+
+
+
+
