@@ -92,7 +92,70 @@ new_column = np.array([30, 40, 50])
 myArray_with_new_column = np.append(myArray4, new_column.reshape(-1, 1), axis=1)
 print(myArray_with_new_column)
 
+print(f'Question 17')
+myArray5 = np.zeros((2,2))
+print(myArray5)
+
+print(f'Question 18')
+column_of_ones = np.ones((2,1))
+myArray5 = np.hstack((myArray5, column_of_ones))
+print(myArray5)
+
+print(f'Question 19')
+rows_of_twos = np.full((2, myArray5.shape[1]), 2)
+myArray5 = np.vstack((myArray5, rows_of_twos))
+print(myArray5)
+
+print(f'Question 20')
+myArray5 = myArray5[:, :-1]
+print(myArray5)
+
+print(f'Question 21')
+myArray5 = myArray5[:-1, :]
+print(myArray5)
+
+print(f'Question 22')
+myArray6 = np.array([[1, 2, 3], [4, 5, 6], [9, 8, 7]])
+myArray6 = np.hstack((myArray6[:, :1], myArray6[:, 2:]))
+
+print(myArray6)
+
+
+print(f'Question 23')
+exercise_1 = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+exercise_1[exercise_1 % 2 == 1] = -1
+
+print(exercise_1)
 
 
 
+print(f'Question 24')
+exercise_2 = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8])
+exercise_2_reshaped = exercise_2.reshape(3, -1)
+
+print(exercise_2_reshaped)
+
+print(f'Question 25')
+exercise_3 = np.arange(4).reshape(2,-1)
+print(exercise_3)
+exercise_3 += 202
+print(exercise_3)
+
+print(f'Question 26')
+random_integers = np.random.randint(30, 41, size=10)
+print(random_integers)
+
+print(f'Question 27')
+x = np.array([21, 64, 86, 22, 74, 55, 81, 79, 90, 89])
+y = np.array([21, 7, 3, 45, 10, 29, 55, 4, 37, 18])
+more_than = np.where(x > y)
+equal_= np.where(x == y)
+print("Positions where x is more than y:", more_than)
+print("Positions where x is equal to y:", equal_)
+
+print(f'Question 28')
+exercise_6 = np.arange(100).reshape(5, -1)
+first_four_columns = exercise_6[:, :4]
+
+print(first_four_columns)
 
